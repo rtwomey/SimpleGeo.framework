@@ -65,6 +65,8 @@
 		5DA3C345128E427C00E128DC /* SGPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA3C343128E427C00E128DC /* SGPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA3C346128E427C00E128DC /* SGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3C344128E427C00E128DC /* SGPoint.m */; };
 		5DA3C35A128E449B00E128DC /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA3C359128E449B00E128DC /* GHUnit.framework */; };
+		5DEC2F7D13045DEE001A59C5 /* SimpleGeo+Annotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC2F7B13045DEE001A59C5 /* SimpleGeo+Annotations.h */; };
+		5DEC2F7E13045DEE001A59C5 /* SimpleGeo+Annotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEC2F7C13045DEE001A59C5 /* SimpleGeo+Annotations.m */; };
 		5DF0864A12ADC878007A8A60 /* SGFeature+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF0864912ADC878007A8A60 /* SGFeature+Private.h */; };
 		5DF0865B12ADC94E007A8A60 /* SGFeatureCollection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF0865A12ADC94E007A8A60 /* SGFeatureCollection+Private.h */; };
 		5DF0866D12ADCA9B007A8A60 /* SGGeometry+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF0866C12ADCA9B007A8A60 /* SGGeometry+Private.h */; };
@@ -170,6 +172,8 @@
 		5DA3C353128E448800E128DC /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA3C355128E448800E128DC /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		5DA3C359128E449B00E128DC /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = Library/Frameworks/GHUnit.framework; sourceTree = SDKROOT; };
+		5DEC2F7B13045DEE001A59C5 /* SimpleGeo+Annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SimpleGeo+Annotations.h"; path = "src/SimpleGeo+Annotations.h"; sourceTree = "<group>"; };
+		5DEC2F7C13045DEE001A59C5 /* SimpleGeo+Annotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SimpleGeo+Annotations.m"; path = "src/SimpleGeo+Annotations.m"; sourceTree = "<group>"; };
 		5DF0864912ADC878007A8A60 /* SGFeature+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SGFeature+Private.h"; path = "src/SGFeature+Private.h"; sourceTree = "<group>"; };
 		5DF0865A12ADC94E007A8A60 /* SGFeatureCollection+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SGFeatureCollection+Private.h"; path = "src/SGFeatureCollection+Private.h"; sourceTree = "<group>"; };
 		5DF0866C12ADCA9B007A8A60 /* SGGeometry+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SGGeometry+Private.h"; path = "src/SGGeometry+Private.h"; sourceTree = "<group>"; };
@@ -363,12 +367,22 @@
 		5DE3488C12A9B477004E320D /* Optional */ = {
 			isa = PBXGroup;
 			children = (
+				5DEC2F7A13045DD6001A59C5 /* Annotations */,
 				5D1C1B9A12A9AD1A0055EC91 /* SimpleGeo+Context.h */,
 				5D1C1B9B12A9AD1A0055EC91 /* SimpleGeo+Context.m */,
 				5D3991E412A489EF00EB7B20 /* SimpleGeo+Places.h */,
 				5D3991E512A489EF00EB7B20 /* SimpleGeo+Places.m */,
 			);
 			name = Optional;
+			sourceTree = "<group>";
+		};
+		5DEC2F7A13045DD6001A59C5 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				5DEC2F7B13045DEE001A59C5 /* SimpleGeo+Annotations.h */,
+				5DEC2F7C13045DEE001A59C5 /* SimpleGeo+Annotations.m */,
+			);
+			name = Annotations;
 			sourceTree = "<group>";
 		};
 		5DF0867212ADCAF5007A8A60 /* Classes */ = {
@@ -440,6 +454,7 @@
 				5DF08AA112AF6544007A8A60 /* SGMultiPolygon+Private.h in Headers */,
 				5D5AD28012DD1CA9008810F0 /* ASIHTTPRequest+OAuth.h in Headers */,
 				5D5AD28812DD1CF5008810F0 /* ASIBase64Transcoder.h in Headers */,
+				5DEC2F7D13045DEE001A59C5 /* SimpleGeo+Annotations.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +600,7 @@
 				5DF08A9E12AF644F007A8A60 /* SGMultiPolygon.m in Sources */,
 				5D5AD28112DD1CA9008810F0 /* ASIHTTPRequest+OAuth.m in Sources */,
 				5D5AD28712DD1CF5008810F0 /* ASIBase64Transcoder.c in Sources */,
+				5DEC2F7E13045DEE001A59C5 /* SimpleGeo+Annotations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
