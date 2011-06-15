@@ -72,6 +72,8 @@ of the window to add "Linked Libraries":
 * SystemConfiguration
 * MobileCoreServices
 * CoreGraphics
+* MapKit
+* CoreLocation
 * libz
 * YAJL (if it's not already present)
 * SimpleGeo (if it's not already present)
